@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+        <link href="resources/css/bootstrap.css" rel="stylesheet" ></link>
+        <link href="resources/css/estilos.css" rel="stylesheet"></link>
+        <link href="resources/css/font-awesome.min.css" rel="stylesheet" ></link>
+        <script src="resources/js/jquery.min.js"></script>
+        <script src="resources/js/jquery-1.12.3.min.js"></script>
+        <script src="resources/js/bootstrap.min.js"></script>
+        <title>Facelets Template</title>
+    </h:head>
+
+    <h:body>
+        <div id="wrapper" class="fix-header">
+            <div id="top">
+                <ui:insert name="top">
+                    <nav class="navbar navbar-default navbar-static-top m-b-0">
+                        <div class="navbar-header">
+                            <div class="top-left-part">
+                                <!-- Logo -->
+                                <a class="logo" href="index.html">
+                                    <!-- Logo icon image, you can use font-icon also -->
+                                    <b>S.I Espacios</b> </a>
+                            </div>
+                            <div class="top-right-part">
+                                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Lina Cortés<span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Cerrar sesión</a></li>
+                                    </ul>
+                                </li>
+                            </div>
+
+                        </div>
+                        <!-- /.navbar-header -->
+                        <!-- /.navbar-top-links -->
+                        <!-- /.navbar-static-side -->
+                    </nav>
+                </ui:insert>
+            </div>
+            <div>
+                <div id="left">
+                    <ui:insert name="left">
+
+                        <div class="navbar-default sidebar" role="navigation">
+                            <div class="sidebar-nav slimscrollsidebar">
+                                <div class="sidebar-head">
+                                    <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">Navigation</span></h3>
+                                </div>
+                                <ul class="nav" id="side-menu">
+                                    <li style="padding: 70px 0 0;">
+                                        <a href="index.html" class="waves-effect"><i class="fa fa-clock-o fa-fw" aria-hidden="true"></i>Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a href="profile.html" class="waves-effect"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="basic-table.html" class="waves-effect"><i class="fa fa-table fa-fw" aria-hidden="true"></i>Basic Table</a>
+                                    </li>
+                                    <li>
+                                        <a href="fontawesome.html" class="waves-effect"><i class="fa fa-font fa-fw" aria-hidden="true"></i>Icons</a>
+                                    </li>
+                                    <li>
+                                        <a href="map-google.html" class="waves-effect"><i class="fa fa-globe fa-fw" aria-hidden="true"></i>Google Map</a>
+                                    </li>
+                                    <li>
+                                        <a href="blank.html" class="waves-effect"><i class="fa fa-columns fa-fw" aria-hidden="true"></i>Blank Page</a>
+                                    </li>
+                                    <li>
+                                        <a href="404.html" class="waves-effect"><i class="fa fa-info-circle fa-fw" aria-hidden="true"></i>Error 404</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </ui:insert>
+                </div>
+                <div id="content" class="left_content">
+                    <ui:insert name="content">
+                        <div id="page-wrapper">
+                            <div class="container-fluid">
+                                <div class="row bg-title">
+                                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                                        <h4 class="page-title">Dashboard</h4> </div>
+                                    <!-- /.col-lg-12 -->
+                                </div>
+                                <!-- /.row -->
+                                <!-- ============================================================== -->
+                                <!-- Different data widgets -->
+                                <!-- ============================================================== -->
+
+                                <!--/.row -->
+                                <!--row -->
+                                <!-- /.row -->
+                                <div class="row">
+                                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                                        <div class="white-box">
+                                            <h3 class="box-title">Products Yearly Sales</h3>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!-- /.container-fluid -->
+                            <footer class="footer text-center"> 2017 &copy; Ample Admin brought to you by wrappixel.com </footer>
+                        </div>
+                    </ui:insert>
+                </div>
+            </div>
+        </div>
+    </h:body>
+
+</html>

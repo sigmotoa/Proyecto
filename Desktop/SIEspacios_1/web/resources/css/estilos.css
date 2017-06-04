@@ -1,0 +1,383 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02-jun-2017, 18:48:14
+    Author     : Lina M
+*/
+@font-face {font-family: "HarmoniaSans";
+    src: url("../fonts/HarmoniaSans.eot"); /* IE9*/
+    src: url("../fonts/HarmoniaSans.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/HarmoniaSans.woff2") format("woff2"), /* chromeã€�firefox */
+    url("../fonts/HarmoniaSans.woff") format("woff"), /* chromeã€�firefox */
+    url("../fonts/HarmoniaSans.ttf") format("truetype"), /* chromeã€�firefoxã€�operaã€�Safari, Android, iOS 4.2+*/
+    url("../fonts/HarmoniaSans.svg#HarmoniaSans W01 Light") format("svg"); /* iOS 4.1- */
+}
+
+@font-face {font-family: "HarmoniaBold";
+    src: url("../fonts/HarmoniaBold.eot"); /* IE9*/
+    src: url("../fonts/HarmoniaBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/HarmoniaBold.woff2") format("woff2"), /* chromeã€�firefox */
+    url("../fonts/HarmoniaBold.woff") format("woff"), /* chromeã€�firefox */
+    url("../fonts/HarmoniaBold.ttf") format("truetype"), /* chromeã€�firefoxã€�operaã€�Safari, Android, iOS 4.2+*/
+    url("../fonts/HarmoniaBold.svg#Harmonia Sans W01 Semibold") format("svg"); /* iOS 4.1- */
+}
+
+body {
+  color: #8b91a0;
+  direction: ltr;
+  font-family: "HarmoniaSans";
+  font-size: 13px;
+  padding: 0;
+  margin: 0;
+  background-image: url('../images/linen-grey.jpg');
+}
+
+.main-login {
+  margin-top: 100px;
+  position: relative;
+}
+
+.form fieldset {
+  border: none;
+  margin: 0;
+  padding: 10px 0 0;
+}
+
+#titulo{
+     font-family: "HarmoniaBold";
+     text-align: center;
+}
+
+
+#wrapper {
+    width: 100%
+}
+#page-wrapper {
+    padding: 0 0 60px;
+    min-height: 568px;
+    background: #edf1f5
+}
+.top-left-part {
+    width: 240px;
+    float: left;
+    border-right: 1px solid rgba(0, 0, 0, .08)
+}
+.top-left-part a {
+    color: #fff;
+    line-height: 59px;
+    font-size: 18px;
+    padding-left: 10px;
+    text-transform: uppercase
+}
+
+.top-right-part {
+    width: 170px;
+    list-style: none;
+    text-align: right;
+    float: right;
+    border-right: 1px solid rgba(0, 0, 0, .08)
+}
+.top-right-part a {
+    color: #fff;
+    line-height: 59px;
+    font-size: 16px;
+    padding-right: 20px;
+}
+.navbar-header {
+    width: 100%;
+    background: #3c4451;
+    border: 0
+}
+
+.m-b-0 {
+    margin-bottom: 0!important
+}
+.container-fluid {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 15px
+}
+
+.footer {
+    bottom: 0;
+    color: #58666e;
+    left: 240px;
+    padding: 20px 30px;
+    position: absolute;
+    right: 0;
+    background: #fff
+}
+.bg-title {
+    background: #fff;
+    overflow: hidden;
+    padding: 15px 10px 9px;
+    margin-bottom: 25px;
+    margin-left: -25.5px;
+    margin-right: -25.5px
+}
+.bg-title h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 6px
+}
+.bg-title .breadcrumb {
+    background: 0 0;
+    margin-bottom: 0;
+    float: right;
+    padding: 0;
+    margin-top: 8px
+}
+.bg-title .breadcrumb a {
+    color: rgba(0, 0, 0, .5)
+}
+.bg-title .breadcrumb a:hover {
+    color: #000
+}
+.bg-title .breadcrumb .active {
+    color: #2cabe3
+}
+.navbar-top-links {
+    margin-right: 0
+}
+.navbar-top-links .badge {
+    position: absolute;
+    right: 6px;
+    top: 15px
+}
+.navbar-top-links>li {
+    float: left
+}
+.navbar-top-links>li>a {
+    color: #fff;
+    padding: 0 14px;
+    line-height: 60px;
+    min-height: 60px
+}
+.navbar-top-links>li>a:hover {
+    background: rgba(0, 0, 0, .1)
+}
+.navbar-top-links>li>a:focus {
+    background: rgba(0, 0, 0, 0)
+}
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+    background: rgba(255, 255, 255, .2)
+}
+.navbar-top-links .dropdown-menu li {
+    display: block
+}
+.navbar-top-links .dropdown-menu li:last-child {
+    margin-right: 0
+}
+.navbar-top-links .dropdown-menu li a div {
+    white-space: normal
+}
+.navbar-top-links .dropdown-alerts,
+.navbar-top-links .dropdown-messages,
+.navbar-top-links .dropdown-tasks {
+    width: 310px;
+    min-width: 0
+}
+.navbar-top-links .dropdown-user {
+    right: 0;
+    left: auto;
+    width: 280px
+}
+.navbar-top-links .dropdown-user .dw-user-box {
+    padding: 15px
+}
+.navbar-top-links .dropdown-user .dw-user-box .u-img {
+    width: 80px;
+    display: inline-block;
+    vertical-align: top
+}
+.navbar-top-links .dropdown-user .dw-user-box .u-img img {
+    width: 100%;
+    border-radius: 5px
+}
+.navbar-top-links .dropdown-user .dw-user-box .u-text {
+    display: inline-block;
+    padding-left: 10px
+}
+.navbar-top-links .dropdown-user .dw-user-box .u-text h4 {
+    margin: 0
+}
+.navbar-top-links .dropdown-user .dw-user-box .u-text p {
+    margin-bottom: 3px
+}
+
+
+.white-box {
+    background: #fff;
+    padding: 25px;
+    margin-bottom: 30px
+}
+.white-box .box-title {
+    margin: 0 0 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px
+}
+
+
+.sidebar {
+    overflow-y: auto;
+    background-image: url('../images/linen-body.jpg');
+}
+.sidebar .sidebar-nav.navbar-collapse {
+    padding-left: 0;
+    padding-right: 0
+}
+.sidebar .fa-fw {
+    width: 20px;
+    text-align: center!important;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    margin-right: 7px;
+    font-size: 16px;
+    vertical-align: middle
+}
+.sidebar .mdi {
+    font-size: 21px
+}
+.sidebar .sidebar-head {
+    padding: 4px 20px;
+    width: 240px;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0
+}
+.sidebar .sidebar-head h3 {
+    color: #fff;
+    font-weight: 400
+}
+.sidebar .sidebar-head h3 i {
+    font-size: 20px
+}
+.sidebar:hover .sidebar-head {
+    width: 240px
+}
+.sidebar .label {
+    font-size: 10px;
+    border-radius: 60px;
+    padding: 6px 8px;
+    min-width: 30px;
+    height: 20px;
+    margin-top: 0
+}
+.sidebar #side-menu .user-pro .img-circle {
+    width: 30px;
+    margin-right: 10px
+}
+.sidebar #side-menu .user-pro>a {
+    padding-left: 15px
+}
+.sidebar #side-menu .user-pro ul li a {
+    padding-left: 25px
+}
+.sidebar #side-menu .user-pro .nav-second-level li i {
+    margin-right: 10px
+}
+#side-menu {
+    overflow: hidden;
+}
+.sidebar .sidebar-search {
+    padding: 15px
+}
+#side-menu li.active>a {
+      background: rgba(99, 95, 95, 0.25);
+}
+#side-menu li a {
+    color: #3c3e42;
+    width: 240px
+}
+#side-menu li a:focus {
+    background: rgba(0, 0, 0, 0)
+}
+#side-menu li.devider {
+    margin: 7px 0;
+    border-top: 1px solid rgba(120, 130, 140, .13)
+}
+#side-menu>li>a {
+    padding: 15px 35px 15px 20px;
+    display: block
+}
+#side-menu>li>a:focus,
+#side-menu>li>a:hover {
+    background: rgba(0, 0, 0, .1)
+}
+#side-menu>li>a.active {
+    color: #2cabe3
+}
+#side-menu ul>li>a:hover {
+    color: #2cabe3;
+    background: 0 0
+}
+#side-menu ul>li>a.active {
+    color: #2cabe3
+}
+.sidebar .arrow {
+    position: absolute;
+    right: 20px;
+    top: 17px
+}
+.sidebar .nav-second-level .arrow {
+    right: 20px;
+    top: 17px
+}
+.sidebar .fa.arrow:before {
+    content: "\f105"
+}
+.sidebar .active>a>span>.fa.arrow:before {
+    content: "\f107"
+}
+.sidebar .nav-second-level li,
+.sidebar .nav-third-level li {
+    border-bottom: none!important
+}
+.sidebar .nav-second-level li a {
+    padding: 14px 10px 14px 40px
+}
+.sidebar .nav-third-level li a {
+    padding-left: 60px
+}
+.content-wrapper .nicescroll-rails {
+    display: none!important
+}
+
+@media (min-width: 768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 240px
+    }
+    .navbar-default {
+        position: relative;
+        width: 100%;
+        top: 0
+    }
+    .sidebar {
+        z-index: 1001;
+        position: fixed;
+        width: 240px;
+        padding-top: 0;
+        height: 100%;
+        transition: .05s ease-in
+    }
+    .sidebar:hover {
+        width: 240px;
+    }
+    .fix-header .navbar-static-top {
+        position: fixed;
+        z-index: 1010 !important;
+    }
+    .fix-header #page-wrapper {
+        margin-top: 60px;
+    }
+}
